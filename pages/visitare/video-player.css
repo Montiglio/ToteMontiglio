@@ -1,0 +1,64 @@
+.visit-video-open,
+.visit-video-actions button {
+  min-height: 56px;
+  padding: 12px 20px;
+  color: #fff;
+  background: #123c35;
+  border: 2px solid #123c35;
+  border-radius: 10px;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.visit-video-open { margin-top: 18px; }
+.hero-video-box {
+  margin-top: 18px;
+  padding: 16px;
+  border: 2px solid #123c35;
+  border-radius: 12px;
+  background: #fffdf8;
+}
+.hero-video-title { margin: 0; color: #123c35; font-size: 0.9rem; font-weight: 700; }
+.hero-video-actions { display: flex; flex-wrap: wrap; gap: 12px; }
+.hero-video-actions .visit-video-open { margin-top: 12px; }
+.visit-video-open:hover,
+.visit-video-actions button:hover { color: #123c35; background: #ffe69a; }
+.visit-video-open:focus-visible,
+.visit-video-actions button:focus-visible { outline: 4px solid #d98f27; outline-offset: 3px; }
+
+.visit-video-dialog {
+  width: min(960px, calc(100vw - 32px));
+  max-width: none;
+  max-height: calc(100dvh - 32px);
+  overflow: auto;
+  padding: 0;
+  color: #172521;
+  background: #fffdf8;
+  border: 3px solid #123c35;
+  border-radius: 16px;
+  box-shadow: 0 18px 60px #0008;
+}
+
+.visit-video-dialog::backdrop { background: #000b; }
+.visit-video-panel { padding: clamp(16px, 3vw, 30px); }
+.visit-video-panel h2 { margin: 0 0 14px; font-size: clamp(1.4rem, 3vw, 2rem); }
+.visit-video-frame {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  min-height: 200px;
+  overflow: hidden;
+  background: #000;
+}
+.visit-video-frame video { display: block; width: 100%; height: 100%; object-fit: contain; background: #000; }
+.visit-video-status { min-height: 1.5em; margin: 12px 0; }
+.visit-video-actions { display: flex; flex-wrap: wrap; gap: 10px; }
+
+@media (max-width: 560px) {
+  .visit-video-dialog { width: calc(100vw - 20px); max-height: calc(100dvh - 20px); }
+  .visit-video-actions button { flex: 1 1 calc(50% - 10px); }
+}
+
+html.high-contrast .visit-video-dialog { color: #fff; background: #000; border-color: #fff; }
+html.high-contrast .visit-video-open,
+html.high-contrast .visit-video-actions button { color: #fff; background: #000; border-color: #fff; }

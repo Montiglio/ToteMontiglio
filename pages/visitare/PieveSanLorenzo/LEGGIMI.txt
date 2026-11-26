@@ -1,0 +1,18 @@
+PIEVE DI SAN LORENZO — PAGINA WEB STATICA
+
+Aprire index.html con un browser. Non occorrono installazioni né connessione Internet.
+Per trasferire o pubblicare il sito, conservare insieme index.html, styles.css,
+pieve.css, pieve.js e l'intera cartella Asset.
+
+styles.css è il CSS allegato: sono stati aggiornati soltanto i percorsi dei font
+da assethome/fonts/ a Asset/fonts/. Le integrazioni per questa pagina sono in pieve.css.
+Asset contiene le 11 immagini estratte dal Word, una fotografia dell'interno
+proveniente dall'archivio Immagini fornito e i sei font locali previsti dal CSS.
+
+I testi sono rielaborati dal documento «Pieve di San Lorenzo e il suo museo
+lapidario» di Francesco Ciravegna. Ipotesi e interpretazioni sono attribuite
+all'autore; non sono stati aggiunti orari di apertura o informazioni non documentate.
+
+La navigazione e le fotografie funzionano anche senza JavaScript.
+JavaScript abilita i pulsanti Testo grande, Alto contrasto e Ripristina lettura.
+Le immagini dei reperti sono apribili in una nuova scheda alla risoluzione originale.

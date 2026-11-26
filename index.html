@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#123c35">
+  <title>Totem Montiglio Monferrato | Home</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="readings-en.js" defer></script>
+  <script src="kiosk.js" defer></script>
+  <script src="home-media-playlist.js" defer></script>
+  <script src="home-media.js" defer></script>
+  <link rel="stylesheet" href="kiosk-accessibility.css">
+</head>
+<body data-kiosk-page="home" data-reading-key="home" data-playlist-intro>
+  <a class="skip-link" href="#contenuto">Vai al contenuto principale</a>
+  <button type="button" class="playlist-touch" aria-label="Toccami / Touch me">Toccami / Touch me</button>
+
+  <header class="site-header" id="inizio">
+    <a class="logo-link" href="#inizio" aria-label="Home del totem">
+      <img src="assethome/Montiglio_Monferrato-Stemma.png" alt="Stemma del Comune di Montiglio Monferrato">
+    </a>
+    <div class="header-title">
+      <p class="kicker" data-it="Benvenuti" data-en="Welcome">Benvenuti</p>
+      <h1 data-it="Montiglio Monferrato" data-en="Montiglio Monferrato">Montiglio Monferrato</h1>
+      <p class="subtitle" data-it="Scopri il territorio" data-en="Discover the area">Scopri il territorio</p>
+    </div>
+    <a class="logo-link logo-proloco" href="pages/proloco/index.html" aria-label="Pro Loco di Montiglio Monferrato">
+      <img src="assethome/LOGO_ProLocoMontiglio.jpg" alt="Logo della Pro Loco di Montiglio Monferrato">
+    </a>
+  </header>
+
+  <main id="contenuto" tabindex="-1">
+    <section class="welcome" aria-labelledby="scelta-titolo">
+      <p class="section-label" data-it="Esplora" data-en="Explore">Esplora</p>
+      <h2 id="scelta-titolo" data-it="Che cosa vuoi scoprire?" data-en="What would you like to discover?">Che cosa vuoi scoprire?</h2>
+      <p data-it="Scegli un tema o una destinazione per iniziare." data-en="Choose a theme or destination to begin.">Scegli un tema o una destinazione per iniziare.</p>
+    </section>
+
+    <div class="home-content">
+      <div class="home-media-column">
+      <section class="promotional-media" aria-label="Video promozionale">
+        <img id="promotional-fallback" src="pages/fiera/assets/hero-scene.webp" alt="Panorama di Montiglio Monferrato">
+      </section>
+      <div class="media-controls" role="group" aria-label="Controlli dei contenuti multimediali">
+        <button type="button" data-media="previous" data-it="Precedente" data-en="Previous">Precedente</button>
+        <button type="button" data-media="pause" aria-pressed="false">Pausa</button>
+        <button type="button" data-media="next" data-it="Successivo" data-en="Next">Successivo</button>
+      </div>      </div>
+
+      <nav class="destination-grid" aria-label="Destinazioni principali">
+      <a class="destination destination-territory" href="pages/montiglio/index.html">
+        <span class="number" aria-hidden="true">01</span>
+        <span class="destination-title" data-it="TuttoMontiglio" data-en="TuttoMontiglio">TuttoMontiglio</span>
+        <span class="destination-description" data-it="Una introduzione al paese" data-en="An introduction to the village">Una introduzione al paese</span>
+        <span class="arrow" aria-hidden="true">&#8594;</span>
+      </a>
+      <a class="destination destination-community" href="pages/visitare/index.html">
+        <span class="number" aria-hidden="true">02</span>
+        <span class="destination-title" data-it="Cosa visitare e itinerari" data-en="Places to visit and itineraries">Cosa visitare e itinerari</span>
+        <span class="destination-description" data-it="Scopri i gioielli di Montiglio" data-en="Discover the gems of Montiglio">Scopri i gioielli di Montiglio</span>
+        <span class="arrow" aria-hidden="true">&#8594;</span>
+      </a>
+      <a class="destination destination-fair" href="pages/eventi/index.html">
+        <span class="number" aria-hidden="true">03</span>
+        <span class="destination-title" data-it="Eventi" data-en="Events">Eventi</span>
+        <span class="destination-description" data-it="Scopri i prossimi eventi in programma" data-en="Discover the next events in the program">Scopri i prossimi eventi in programma</span>
+        <span class="arrow" aria-hidden="true">&#8594;</span>
+      </a>
+      <a class="destination destination-information" href="pages/informazioni-utili/index.html">
+        <span class="number" aria-hidden="true">04</span>
+        <span class="destination-title" data-it="Informazioni utili" data-en="Useful information">Informazioni utili</span>
+        <span class="destination-description" data-it="Messaggi ed informazioni dal Comune" data-en="Messages and information from the Municipality">Messaggi ed informazioni dal Comune</span>
+        <span class="arrow" aria-hidden="true">&#8594;</span>
+      </a>
+      <a class="destination destination-accessibility" href="pages/accessibilitaPaese/index.html">
+        <span class="number" aria-hidden="true">05</span>
+        <span class="destination-title" data-it="Accessibilità" data-en="Accessibility">Accessibilità</span>
+        <span class="destination-description" data-it="Montiglio, un paese che ti accoglie" data-en="Montiglio, a village that welcomes you">Montiglio, un paese che ti accoglie</span>
+        <span class="arrow" aria-hidden="true">&#8594;</span>
+      </a>
+      </nav>
+    </div>
+  </main>
+
+  <aside class="accessibility-dock" aria-label="Controlli di accessibilità">
+    <button type="button" class="control active" data-language="it" aria-pressed="true">IT <span>Italiano</span></button>
+    <button type="button" class="control" data-language="en" aria-pressed="false">EN <span>English</span></button>
+    <button type="button" class="control" data-action="text" aria-pressed="false"><span aria-hidden="true">A+</span> <span data-it="Testo grande" data-en="Large text">Testo grande</span></button>
+    <button type="button" class="control" data-action="contrast" aria-pressed="false"><span aria-hidden="true">◐</span> <span data-it="Contrasto alto" data-en="High contrast">Contrasto alto</span></button>
+    <button type="button" class="control" data-action="help" aria-expanded="false" aria-controls="help-panel"><span aria-hidden="true">?</span> <span data-it="Aiuto" data-en="Help">Aiuto</span></button>
+    <button type="button" class="control" data-action="scroll-down"><span aria-hidden="true">↓</span> <span data-it="Scorri giù" data-en="Scroll down">Scorri giù</span></button>
+    <button type="button" class="control" data-action="scroll-up"><span aria-hidden="true">↑</span> <span data-it="Scorri su" data-en="Scroll up">Scorri su</span></button>
+  </aside>
+  <p class="help-panel" id="help-panel" role="status" hidden data-it="Usa i pulsanti grandi per scegliere una pagina. I comandi in basso sono sempre disponibili. Email: infopointmontiglio@gmail.com. Telefono: 391 7277165." data-en="Use the large buttons to choose a page. The controls at the bottom are always available. Email: infopointmontiglio@gmail.com. Phone: 391 7277165.">Usa i pulsanti grandi per scegliere una pagina. I comandi in basso sono sempre disponibili. Email: infopointmontiglio@gmail.com. Telefono: 391 7277165.</p>
+
+  <script>
+    const root = document.documentElement;
+    const languageButtons = document.querySelectorAll('[data-language]');
+    const translatable = document.querySelectorAll('[data-it][data-en]');
+    const helpPanel = document.querySelector('#help-panel');
+
+    function setLanguage(language) {
+      root.lang = language;
+      translatable.forEach((element) => {
+        element.textContent = element.dataset[language];
+      });
+      languageButtons.forEach((button) => {
+        const active = button.dataset.language === language;
+        button.classList.toggle('active', active);
+        button.setAttribute('aria-pressed', String(active));
+      });
+    }
+
+    languageButtons.forEach((button) => {
+      button.addEventListener('click', () => setLanguage(button.dataset.language));
+    });
+    document.querySelector('[data-action="text"]').addEventListener('click', (event) => {
+      const active = root.classList.toggle('large-text');
+      event.currentTarget.setAttribute('aria-pressed', String(active));
+    });
+    document.querySelector('[data-action="contrast"]').addEventListener('click', (event) => {
+      const active = root.classList.toggle('high-contrast');
+      event.currentTarget.setAttribute('aria-pressed', String(active));
+    });
+    document.querySelector('[data-action="help"]').addEventListener('click', (event) => {
+      const expanded = helpPanel.hidden;
+      helpPanel.hidden = !expanded;
+      event.currentTarget.setAttribute('aria-expanded', String(expanded));
+    });
+    document.querySelector('[data-action="scroll-down"]').addEventListener('click', () => {
+      window.scrollBy({ top: Math.max(240, window.innerHeight - 180), behavior: 'smooth' });
+    });
+    document.querySelector('[data-action="scroll-up"]').addEventListener('click', () => {
+      window.scrollBy({ top: -Math.max(240, window.innerHeight - 180), behavior: 'smooth' });
+    });
+  </script>
+</body>
+</html>
