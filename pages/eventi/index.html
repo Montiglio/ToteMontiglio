@@ -4,12 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Eventi | Montiglio Monferrato</title>
-  <meta name="description" content="Eventi Estate 2026">
+  <meta name="description" content="Piano generale degli eventi di Montiglio Monferrato e informazioni su Natale al Museo.">
   <link rel="stylesheet" href="../../styles.css">
   <script src="events.js" defer></script>
   <script src="../../readings-en.js" defer></script>
   <script src="../../kiosk.js" defer></script>
   <link rel="stylesheet" href="../../kiosk-accessibility.css">
+  <link rel="stylesheet" href="events.css">
 </head>
 <body data-kiosk-page="content" data-reading-key="eventi">
   <header class="site-header">
@@ -26,18 +27,19 @@
       </nav>
     </div>
   </header>
-  <main id="contenuto">
-    <section class="section-light">
-      <div class="container">
-        <div class="page-intro">
-          <h1>Eventi</h1>
-          <p>Prossimi appuntamenti a Montiglio e nelle sue frazioni.</p>
-        </div>
-        <div class="event-gallery" data-events-gallery>
-          <noscript>Per visualizzare il calendario degli eventi è necessario attivare JavaScript.</noscript>
-        </div>
+  <main id="contenuto" class="container events-page" tabindex="-1">
+    <h1 data-it="Piano generale eventi di Montiglio" data-en="Montiglio events calendar">Piano generale eventi di Montiglio</h1>
+    <div class="events-layout">
+      <div class="events-calendar">
+        <img src="assets/eventiCurrent/TuttiEventi.png" width="2000" height="2829"
+          alt="Calendario degli eventi montigliesi, suddivisi per stagione."
+          data-alt-it="Calendario degli eventi montigliesi, suddivisi per stagione."
+          data-alt-en="Montiglio events calendar, organised by season.">
       </div>
-    </section>
+      <div class="event-gallery" data-events-gallery>
+        <noscript><a class="button" href="natale-museo.html">Natale al Museo</a></noscript>
+      </div>
+    </div>
   </main>
   <footer class="site-footer">
     <div class="container footer-content">

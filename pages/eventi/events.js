@@ -5,10 +5,11 @@
 window.TOTEM_EVENTS = [
   {
     "status": "published",
-    "image": "assets/eventi/nataleAlMuseo.jpeg",
+    "image": "assets/eventiCurrent/nataleAlMuseo.jpeg",
+    "href": "natale-museo.html",
     "month": {
-      "it": "Dicembre-Gennaio",
-      "en": "December-January"
+      "it": "Dicembre 2026 – Gennaio 2027",
+      "en": "December 2026 – January 2027"
     },
     "title": {
       "it": "Natale al Museo",
@@ -20,10 +21,9 @@ window.TOTEM_EVENTS = [
     },
     "details": [
       {
-        "it": "Dal 24 Dicembre, ore 24:00. Organizza la Proloco di Montiglio Monferrato.",
-        "en": "From 24 December, at 24:00. Organised by Proloco of Montiglio Monferrato."
-      },
-      
+        "it": "Esposizione temporanea a Montiglio. Apertura la notte del 24 dicembre, dopo la Messa di mezzanotte.",
+        "en": "Temporary exhibition in Montiglio. Opens on Christmas Eve after Midnight Mass."
+      }
     ]
   }
 ];
@@ -68,7 +68,16 @@ window.TOTEM_EVENTS = [
       details.append(paragraph);
     });
     content.append(details);
-    article.append(image, content);
+    if (event.href) {
+      const link = document.createElement("a");
+      link.className = "button";
+      link.href = event.href;
+      link.dataset.it = `Scopri ${event.title.it}`;
+      link.dataset.en = `Explore ${event.title.en}`;
+      link.textContent = link.dataset.it;
+      content.append(link);
+    }
+    article.append(content, image);
     return article;
   });
 

@@ -1,0 +1,43 @@
+.events-page {
+  padding-block: clamp(28px, 4vw, 52px);
+}
+
+.events-layout,
+.christmas-layout {
+  display: grid;
+  gap: 24px;
+  align-items: start;
+}
+
+.events-calendar img {
+  display: block;
+  width: 100%;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.events-layout .event-gallery {
+  grid-template-columns: minmax(0, 1fr);
+}
+
+.events-layout .event-card > img {
+  aspect-ratio: auto;
+}
+
+.events-layout .event-card-content :focus-visible {
+  outline-offset: 3px;
+}
+
+.christmas-layout .christmas-poster {
+  margin: 0;
+}
+
+@media (min-width: 760px) {
+  .events-layout {
+    grid-template-columns: minmax(0, 3fr) minmax(0, 2fr);
+  }
+
+  .christmas-layout {
+    grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
+  }
+}
