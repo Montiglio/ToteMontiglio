@@ -180,7 +180,8 @@ body[data-playlist-intro] > main {
 }
 body[data-playlist-intro] > main > .welcome,
 body[data-playlist-intro] .destination-grid,
-body[data-playlist-intro] .media-controls {
+body[data-playlist-intro] .media-controls,
+body[data-playlist-intro] .proloco-return {
   display:none !important;
 }
 body[data-playlist-intro] .home-content,
